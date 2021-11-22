@@ -2,6 +2,7 @@ import random
 name = "James Declerus"
 
 question = "Will i run Grandma's Marathon in June?"
+
 answer = ""
 random_number = random.randint(1, 10)
 print (random_number)
@@ -29,10 +30,16 @@ elif random_number == 10:
 else: 
   answer="Error"
   print(answer)
+  
+
 
 if name == "":
   print("Question: " + question)
 else:
   print(name + " asks: " + question)
-
-print(" Magic 8-Ball's answer: " + answer)
+  
+if len(question) == 0:
+  print("please, enter your question")
+else:
+    print(name + " asks: " + question)
+    print("Magic 8-Ball's answer: " + answer)
