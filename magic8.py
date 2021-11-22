@@ -3,7 +3,7 @@ name = "James Declerus"
 
 question = "Will i run Grandma's Marathon in June?"
 answer = ""
-random_number = random.randint(1, 9)
+random_number = random.randint(1, 10)
 print (random_number)
 
 if random_number == 1:
@@ -24,10 +24,15 @@ elif random_number == 8:
   answer = "Outlook not so good."
 elif random_number == 9: 
   answer = "Very doubtful."
+elif random_number == 10:
+  answer = "Thank you, Jesus!"
 else: 
   answer="Error"
   print(answer)
 
-print(name + " asks: " + question)
+if name == "":
+  print("Question: " + question)
+else:
+  print(name + " asks: " + question)
 
 print(" Magic 8-Ball's answer: " + answer)
